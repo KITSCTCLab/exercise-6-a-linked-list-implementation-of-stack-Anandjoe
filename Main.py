@@ -122,10 +122,7 @@ for item in input_data.split(', '):
 obj = DoublyCircularLinkedList()
 result = []
 for i in range(len(operations)):
-    if operations
-    
-    
-    at_head":
+    if operations[i] == "add_at_head":
         result.append(obj.add_at_head(data[i]))
     elif operations[i] == "add_at_tail":
         result.append(obj.add_at_tail(data[i]))
