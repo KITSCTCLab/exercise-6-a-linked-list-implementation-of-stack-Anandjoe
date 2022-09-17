@@ -122,10 +122,13 @@ for item in input_data.split(', '):
 obj = DoublyCircularLinkedList()
 result = []
 for i in range(len(operations)):
-    if operations[i] == "add_at_head":
+    if operations
+    
+    
+    at_head":
         result.append(obj.add_at_head(data[i]))
     elif operations[i] == "add_at_tail":
-        result.append(obj.add_at_tail(data[i])
+        result.append(obj.add_at_tail(data[i]))
     elif operations[i] == "add_at_index":
         result.append(obj.add_at_index(int(data[i][0]), data[i][1]))
     elif operations[i] == "get":
