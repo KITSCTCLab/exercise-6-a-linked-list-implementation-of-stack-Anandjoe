@@ -1,19 +1,16 @@
 from typing import List
 
-def insertionSort(array) -> List[int]:
+def selectionSort(array, size) -> List[int]:
   # Write your code here
-  for i in range(1, len(array)):
-    n = array[i]
-    j = i - 1
-    while j>=0 and n < array[j]:
-      array[j+1] = array[j]
-      j -= 1
-    array[j+1] = n
-   
+  for select in range(size):
+    check = select
+    for sort in range(select,size):
+      if(array[sort]<array[select]):
+        array[sort],array[select] = array[select],array[sort]
   return array
+  
 
-
-# data = [9, 5, 1, 4, 3]
+# Do not change the following code
 input_data = input()
 data = []
 for item in input_data.split(', '):
@@ -21,4 +18,4 @@ for item in input_data.split(', '):
     data.append(int(item))
   elif item.lstrip("-").isnumeric():
     data.append(int(item))
-print(insertionSort(data))
+print(selectionSort(data, len(data)))
